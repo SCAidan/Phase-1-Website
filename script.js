@@ -3,8 +3,9 @@ const form = document.getElementById('estimate-form');
 const dateInput = document.getElementById('preferred-date');
 const now = new Date();
 const localToday = `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')}`;
+if (form && dateInput) {
 dateInput.min = localToday;
-document.getElementById('year').textContent = now.getFullYear();
+
 function validateDate() {
  dateInput.setCustomValidity(dateInput.value && dateInput.value < localToday ? 'Please choose today or a future date.' : '');
 }
@@ -24,7 +25,9 @@ document.getElementById('text-request').addEventListener('click', () => {
  window.location.href = `sms:+18316495939${ios ? '&' : '?'}body=${encodeURIComponent(message)}`;
  document.getElementById('form-status').textContent = 'Your messaging app will open with the request. Tap Send there to send it to Steve. If messaging is unavailable on this device, submit by email above.';
 });
+}
 const dialog = document.getElementById('photo-dialog');
+if (dialog) {
 let opener;
 document.querySelectorAll('.gallery-item').forEach(button => button.addEventListener('click', () => {
  opener = button;
@@ -36,3 +39,6 @@ document.querySelectorAll('.gallery-item').forEach(button => button.addEventList
 document.getElementById('close-photo').addEventListener('click', () => dialog.close());
 dialog.addEventListener('click', e => { if (e.target === dialog) { const r = dialog.getBoundingClientRect(); if(e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) dialog.close(); } });
 dialog.addEventListener('close', () => opener?.focus());
+}
+document.getElementById('year').textContent = new Date().getFullYear();
+if (document.body && /(?:\/|index\.html)$/.test(location.pathname)) { const destinations={'#about':'about.html','#work':'gallery.html','#water-recapture':'water-recapture.html'}; if(destinations[location.hash]) location.replace(destinations[location.hash]); }

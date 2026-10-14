@@ -1,7 +1,15 @@
-# Website update
+# Multipage update
 
-Upload index.html, styles.css, robots.txt, sitemap.xml and the complete assets folder to the repository root. Keep script.js and CNAME. Review locally before uploading: GitHub may automatically publish a commit.
+## Upload in two batches
+1. In the GitHub repository root, upload index.html, about.html, gallery.html, water-recapture.html, styles.css, script.js, robots.txt and sitemap.xml. Keep the existing CNAME file.
+2. Open the assets folder IN GITHUB. Open the assets folder on your Mac and upload its contents there. Do not upload images to the root.
 
-Includes ten supplied photos (optimized WebP), before/after IMG_0836 → IMG_0837, expanded Steve/Aidan biography, larger logo, wastewater recapture information, satisfaction guarantee, canonical URL, social sharing metadata, sitemap and image dimensions. Existing phone/email and FormSubmit endpoint are preserved.
+A commit may automatically publish. Review index.html locally before uploading.
 
-After launch: enable HTTPS; verify the domain in Google Search Console; submit sitemap.xml; run mobile and desktop PageSpeed Insights; check real form delivery with the owner. No new form submission was sent during preparation. No ranking or PageSpeed score is guaranteed. No physical address, review stars or regulatory certification was invented.
+Home keeps the existing hero photo, services, satisfaction guarantee and estimate form. About Us contains Steve and Aidan's story. Gallery has three before/after sets; the duplicate Coastal property care photo is no longer displayed. Water Recapture shows the supplied trailer and explains suction, filtration and reuse. Each page has a unique title, description, canonical URL and sitemap entry. Navigation is visible on phones.
+
+Before/after pair assignments: IMG_2122 before / IMG_2125 after; IMG_0840 before / IMG_0845 after; existing IMG_0836 before / IMG_0837 after. Confirm these match your intended order.
+
+The Cleaning Machine is the displayed name. montereypressurewash.com remains the domain. Existing phone, email and FormSubmit settings are preserved. No form submission was sent. No regulatory certification or measured capture/reuse percentage is claimed.
+
+After publishing: verify all four pages and images, confirm a real form request arrives, and submit sitemap.xml in Google Search Console. Run PageSpeed Insights on mobile and desktop; rankings and scores are not guaranteed.
